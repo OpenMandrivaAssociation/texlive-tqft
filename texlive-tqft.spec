@@ -1,12 +1,12 @@
-# revision 24169
+# revision 33411
 # category Package
 # catalog-ctan /macros/latex/contrib/tqft
-# catalog-date 2011-10-02 00:21:09 +0200
+# catalog-date 2014-04-08 15:56:54 +0200
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 2.0
 Name:		texlive-tqft
-Version:	1.0
-Release:	7
+Version:	2.0
+Release:	1
 Summary:	Drawing TQFT diagrams with TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tqft
@@ -35,8 +35,9 @@ used in TQFT and other mathematical diagrams.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/tqft/tikzlibrarytqft.code.tex
 %{_texmfdistdir}/tex/latex/tqft/tqft.sty
-%doc %{_texmfdistdir}/doc/latex/tqft/README.txt
+%doc %{_texmfdistdir}/doc/latex/tqft/README
 %doc %{_texmfdistdir}/doc/latex/tqft/tqft_doc.pdf
 %doc %{_texmfdistdir}/doc/latex/tqft/tqft_doc.tex
 #- source
@@ -52,16 +53,3 @@ used in TQFT and other mathematical diagrams.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 757041
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 719789
-- texlive-tqft
-- texlive-tqft
-- texlive-tqft
-
