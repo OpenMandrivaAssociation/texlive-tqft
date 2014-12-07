@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-tqft
 Version:	2.0
-Release:	2
+Release:	3
 Summary:	Drawing TQFT diagrams with TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tqft
