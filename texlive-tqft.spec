@@ -1,12 +1,6 @@
-# revision 33411
-# category Package
-# catalog-ctan /macros/latex/contrib/tqft
-# catalog-date 2014-04-08 15:56:54 +0200
-# catalog-license lppl1.3
-# catalog-version 2.0
 Name:		texlive-tqft
-Version:	2.0
-Release:	4
+Version:	2.1
+Release:	1
 Summary:	Drawing TQFT diagrams with TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tqft
@@ -35,14 +29,10 @@ used in TQFT and other mathematical diagrams.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/tqft/tikzlibrarytqft.code.tex
-%{_texmfdistdir}/tex/latex/tqft/tqft.sty
-%doc %{_texmfdistdir}/doc/latex/tqft/README
-%doc %{_texmfdistdir}/doc/latex/tqft/tqft_doc.pdf
-%doc %{_texmfdistdir}/doc/latex/tqft/tqft_doc.tex
+%{_texmfdistdir}/tex/latex/tqft
+%doc %{_texmfdistdir}/doc/latex/tqft
 #- source
-%doc %{_texmfdistdir}/source/latex/tqft/tqft.dtx
-%doc %{_texmfdistdir}/source/latex/tqft/tqft.ins
+%doc %{_texmfdistdir}/source/latex/tqft
 
 #-----------------------------------------------------------------------
 %prep
