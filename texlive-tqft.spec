@@ -1,6 +1,6 @@
 Name:		texlive-tqft
 Version:	2.1
-Release:	2
+Release:	3
 Summary:	Drawing TQFT diagrams with TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tqft
