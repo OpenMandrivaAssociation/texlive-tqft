@@ -1,13 +1,13 @@
 Name:		texlive-tqft
-Version:	2.1
-Release:	3
+Version:	44455
+Release:	1
 Summary:	Drawing TQFT diagrams with TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tqft
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ shapes that look like cobordisms between circles, such as those
 used in TQFT and other mathematical diagrams.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -36,7 +36,8 @@ used in TQFT and other mathematical diagrams.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
