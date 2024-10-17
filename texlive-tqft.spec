@@ -3,7 +3,7 @@ Version:	71401
 Release:	1
 Summary:	Drawing TQFT diagrams with TikZ/PGF
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/tqft
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/tqft
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tqft.doc.r%{version}.tar.xz
